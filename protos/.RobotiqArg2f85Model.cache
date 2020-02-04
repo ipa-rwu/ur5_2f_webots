@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.4
+protoFileHash: d8ff83b228062a012346814653b2fc00
+containsDevices: 1
+baseType: Robot
+slotType: 
+parameters: translation,rotation,controller
+tags: 
+license:  Apache License 2.0
+licenseUrl:  http://www.apache.org/licenses/LICENSE-2.0
+documentationUrl: 
+info: This\sis\sa\sproto\sfile\sfor\sWebots\sfor\sthe\sRobotiqArg2f85Model\nExtracted\sfrom:\srobotiq_arg2f_85_model.urdf\n

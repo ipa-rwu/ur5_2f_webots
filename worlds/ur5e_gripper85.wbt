@@ -1,0 +1,88 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  info [
+    "Unviversal Robot UR3e, UR5e and UR10e grasping cans using Robotiq 3F grippers."
+  ]
+  title "Universal Robot"
+  basicTimeStep 16
+  physicsDisableAngularThreshold 0.1
+  contactProperties [
+    ContactProperties {
+      bounce 0.1
+    }
+    ContactProperties {
+      material1 "slope"
+      coulombFriction [
+        0.5
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.11968472431391142 0.9256664225232489 0.3589111881495382 1.3606534862831756
+  position 3.4298986213542686 2.6447139804281012 1.8942614112707075
+  exposure 1.7
+}
+Transform {
+  translation 1.77 1.05 -2.9
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.23 0.3 0.01
+      }
+    }
+  ]
+}
+DirectionalLight {
+  ambientIntensity 0.5
+  direction 0 -1.5 1
+}
+Floor {
+}
+SolidBox {
+  translation 0.455 0.375 -0.02
+  size 1.47 0.75 0.96
+  appearance GalvanizedMetal {
+  }
+}
+UR5e {
+  hidden position_0_0 -2.9430599094926494e-05
+  hidden rotation_1 0 0 -1 2.9430604422800917e-05
+  hidden position_1_0 0.0002897259993450809
+  hidden rotation_2 0 1 0 1.571085725999344
+  hidden position_2_0 9.273059115289876e-05
+  hidden rotation_3 0 1 0 9.273059059735909e-05
+  hidden position_3_0 -2.7948488868577734e-05
+  hidden rotation_4 0 1 0 1.5707680515111309
+  hidden position_4_0 -8.091394256244525e-06
+  hidden rotation_5 0 0 -1 8.091371691588802e-06
+  hidden position_5_0 -4.674632060479828e-06
+  hidden translation_6 -4.801162233533687e-09 7.695745762870127e-09 0.10002623241671374
+  hidden rotation_6 0.8654641081041837 -0.5009709047044694 0.00017384767835538375 3.6653221927121026e-06
+  hidden position_7_0 1.3653659889840161e-08
+  hidden position_7_1 1.3653879963880749e-08
+  hidden position_7_2 1.760022430075782e-08
+  hidden position_7_3 1.7599857508146106e-08
+  hidden rotation_8 1 -6.826829944920083e-09 1.1824417858876498e-15 3.141593
+  hidden rotation_12 1 -8.80011215037891e-09 1.5242243341433428e-15 3.141593
+  hidden position_12_0 -1.1723955140041653e-13
+  hidden position_14_0 1.1734819939093258e-13
+  translation 0 0.75 0
+  rotation -0.5773502691896258 -0.5773502691896258 -0.5773502691896258 2.094395
+  controller "universal_robots_ros"
+  selfCollision FALSE
+  toolSlot [
+    Robotiq85Gripper {
+    }
+  ]
+}
+Background {
+  skyColor [
+    1 1 1
+  ]
+}

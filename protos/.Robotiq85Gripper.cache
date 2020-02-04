@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.4
+protoFileHash: 7d655a8bad4c27f1d69844141ede3135
+containsDevices: 1
+baseType: Robot
+slotType: 
+parameters: translation,rotation,name
+tags: 
+license:  Apache License 2.0
+licenseUrl:  http://www.apache.org/licenses/LICENSE-2.0
+documentationUrl: 
+info: This\sis\sa\sproto\sfile\sfor\sWebots\sfor\sthe\sRobotiq85Gripper\nExtracted\sfrom:\srobotiq_85_gripper.urdf\n

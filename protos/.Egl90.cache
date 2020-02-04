@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.4
+protoFileHash: 6bdbcf362a5efa6d657a7e099d534693
+containsDevices: 1
+baseType: Robot
+slotType: 
+parameters: translation,rotation,controller
+tags: 
+license:  Apache License 2.0
+licenseUrl:  http://www.apache.org/licenses/LICENSE-2.0
+documentationUrl: 
+info: This\sis\sa\sproto\sfile\sfor\sWebots\sfor\sthe\sEgl90\nExtracted\sfrom:\segl90.urdf\n
