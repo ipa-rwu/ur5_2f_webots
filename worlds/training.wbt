@@ -1,0 +1,90 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  info [
+    "Unviversal Robot UR3e, UR5e and UR10e grasping cans using Robotiq 3F grippers."
+  ]
+  title "Universal Robot"
+  basicTimeStep 16
+  physicsDisableAngularThreshold 0.1
+  contactProperties [
+    ContactProperties {
+      bounce 0.1
+    }
+    ContactProperties {
+      material1 "slope"
+      coulombFriction [
+        0.5
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.5904968334990017 0.6640781233956785 0.4585997554021659 1.5249963038312258
+  position 1.810115529619968 3.8539019674155828 0.810798823725358
+  exposure 1.7
+}
+DirectionalLight {
+  direction 0 -1.5 1
+}
+Floor {
+}
+SolidBox {
+  translation 0.455 0.375 -0.02
+  size 1.47 0.75 0.96
+  appearance GalvanizedMetal {
+  }
+}
+Background {
+  skyColor [
+    1 1 1
+  ]
+}
+UR5e {
+  translation 0 0.75 0
+  rotation -0.5773502691896258 -0.5773502691896258 -0.5773502691896258 2.0944
+  controller "modify"
+  toolSlot [
+    Robotiq85Gripper {
+      rotation 0 0 1 1.5708
+    }
+  ]
+}
+PlasticCrate {
+  translation 0.55 0.75 -0.35
+  size 0.25 0.1 0.25
+}
+PlasticCrate {
+  translation 0.55 0.75 0.31
+  name "plastic crate(1)"
+  size 0.25 0.1 0.25
+}
+Solid {
+  translation 0 2 0
+  rotation 1 0 0 3.14
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/roughcast.jpg"
+          ]
+        }
+        roughness 0.5
+        metalness 0
+        textureTransform TextureTransform {
+          scale 6 8
+        }
+      }
+      geometry ElevationGrid {
+        xDimension 2
+        xSpacing 1.65
+        zDimension 3
+        zSpacing 1.65
+      }
+    }
+  ]
+  name "roof"
+  boundingObject Transform {
+    translation 0 -2 0
+  }
+}

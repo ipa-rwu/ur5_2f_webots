@@ -1,0 +1,3 @@
+robotiq_2f_joints:
+       - shoulder_pan_joint
+       - shoulder_lift_joint
