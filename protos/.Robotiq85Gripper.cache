@@ -1,9 +1,9 @@
-Webots Proto Cache File version 1.4
-protoFileHash: 7d655a8bad4c27f1d69844141ede3135
-containsDevices: 1
-baseType: Robot
+Webots Proto Cache File version 1.5
+protoFileHash: 972d13a026ae41591761aaef13c7f59d
+needsRobotAncestor: 1
+baseType: Solid
 slotType: 
-parameters: translation,rotation,name
+parameters: translation,rotation,name,toolSlot
 tags: 
 license:  Apache License 2.0
 licenseUrl:  http://www.apache.org/licenses/LICENSE-2.0

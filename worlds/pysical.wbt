@@ -20,7 +20,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.37837604979947553 0.8884337461013758 0.2598404197318439 0.8081834787163353
-  position 2.5640409562342743 1.8496647143254863 2.5374211088927794
+  position 2.7508541660670014 1.9549676039591086 2.754675271371713
   exposure 1.7
 }
 DirectionalLight {
@@ -36,7 +36,7 @@ SolidBox {
   }
   physics Physics {
     density 1500
-    mass 1
+    mass 20
   }
 }
 Background {
@@ -51,6 +51,15 @@ UR5e {
   toolSlot [
     Robotiq85Gripper {
       rotation 0 0 1 1.5708
+      toolSlot [
+        Robot {
+          children [
+            TouchSensor {
+            }
+          ]
+          controller "ros"
+        }
+      ]
     }
   ]
 }
